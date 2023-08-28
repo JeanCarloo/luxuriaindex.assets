@@ -1,0 +1,333 @@
+    <style>
+
+        body {
+          color: #ffffff !important;
+            background-size: cover;
+        }
+        
+        .dropdown-menu {
+          background-color: #ffffff !important;
+        }
+        
+        .app .app-header .dropdown-menu a {
+          color: white !important;
+        }
+        
+        #dvLang,
+        #imgGplay,
+        #libilhete,
+        .lw-rodape,
+        .app-footer {
+          display: none !important;
+        }
+        
+        .lw-header .brand {
+            height: 40px !important;
+        }
+        
+        html {
+          background-color: #171717 !important;
+        }
+        
+        .border {
+          border: none !important;
+        }
+        
+        label {
+          color: white !important;
+        }
+        
+        .page-aposta .campeonatos ul li {
+          border: none !important;
+          transition: 200ms;
+        }
+        
+        .page-aposta .campeonatos ul li:hover {
+          background: #00000075 !important;
+        }
+        
+        .menu-mobile ul li a {
+            color: #ededed !important;
+                border: none !important;
+        }
+        
+        .menu-mobile div:has(a){
+            display: none !important;
+        }
+        
+        @media (min-width: 767px) {
+            header .app-container a:has(img) img {
+                height: 100px !important;
+            }
+        }
+        
+        html, .page-aposta {
+         background: black !important;
+        }
+        
+        .container-fluid {
+        padding: 0 !important;
+        }
+        
+        .row.mt-3:has(#text-busca) {
+            display: none !important;
+        }
+        
+        .opcoes-responsivo, .row .row:has(#text-busca) {
+            display: none !important;
+        }
+        
+        img {
+            vertical-align: middle;
+            border-style: none;
+            border-radius: 20px;
+        }
+        
+        /*JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-
+        JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-
+        JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-
+        JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-
+        JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-JOGOS-*/
+        
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s;
+            background: rgb(0 0 0 / 70%);
+            border-radius: 19px;
+        }
+        
+        .tag-popular {
+            background: #ff9700;
+            padding: 0 3px;
+            border-radius: 4px;
+        }
+        
+        .btn-primary {
+            color: #fff;
+            background-color: #ff9700;
+            border-color: #ff9700;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+            font-weight: 900;
+            padding: 10px 10px;
+        }
+        
+        .btn-primary:hover {
+            color: #000;
+            background-color: #e9d878;
+            border-color: #e9d878;
+            border-radius: 25px;
+        }
+        
+        .btn-success {
+            color: #fff;
+            background-color: #000000;
+            border-color: #000000;
+            transition: background-color 0.3s;
+            border-radius: 25px;
+            padding: 5px 20px;
+        }
+        
+        .btn-success:hover {
+            color: #fff;
+            background-color: #252525;
+            border-color: #252525;
+            border-radius: 25px;
+        }
+        
+        .card {
+            border: none !important;
+            box-shadow: 5px 5px 14px -5px #000000 !important;
+            border-radius: 20px;
+        }
+        
+        /*---------------------------------------------------------------------*/
+        /*MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL
+        -MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL
+        -MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL
+        -MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL
+        -MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL
+        -MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-MENU-LATERAL-*/
+        
+        #pg-aposta .col-campeonatos .menu-comapeonatos.menu-comapeonatos a span {
+            display: none;
+        }
+        
+        #pg-aposta .col-campeonatos .menu-comapeonatos.menu-comapeonatos {
+            background-color: rgb(44 41 41 / 0%)!important;
+            box-shadow: 0px 0px 26px -10px #000000 !important;
+            border-radius: 20px;
+        }
+        
+        #pg-aposta .col-campeonatos .menu-comapeonatos a.active {
+            color: #ffc572!important;
+        }
+        
+        .pt-4, .py-4 {
+            padding-top: 1.5rem !important;
+            padding-left: 25px;
+        }
+        
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: aliceblue;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+        }
+        
+        #pg-aposta .col-campeonatos .menu-comapeonatos ul {
+            margin-bottom: 0px;
+            margin-top: -27px;
+            padding: 0px 0px 10px 10px;
+            margin: 10px;
+            padding-left: 0px;
+            margin-left: -10px;
+            margin-right: 0px;
+            padding-bottom: 50px;
+            padding-top: 40px;
+            background-color: #2e0f55;
+            border-radius: 15px;
+        }
+        
+        #pg-aposta .col-campeonatos .menu-comapeonatos li:not(:last-child) {
+            margin-bottom: 35px;
+        }
+        
+        #pg-aposta .col-campeonatos .menu-comapeonatos ul, #pg-aposta .col-campeonatos .menu-comapeonatos li {
+            display: block;
+            margin-top: -40px;
+            margin-right: 0px;
+        }
+        
+        #pg-aposta .col-campeonatos .menu-comapeonatos .title {
+            background-image: linear-gradient(to bottom, #2e0f55, #2e0f55)!important;
+            font-family: Helvetica, sans-serif;
+            font-size: 22px;
+            text-transform: capitalize;
+            text-align: left;
+            padding-top: 0px;
+            padding-left: 52px;
+            line-height: 80px;
+            margin-left: -9px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            border-radius: 15px;
+            color: #ff9700;
+            font-weight: 900;
+        }
+        
+        #pg-aposta .col-campeonatos .menu-comapeonatos.menu-comapeonatos a {
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: initial;
+            background-color: #2e0f55!important;
+            border: 0;
+            line-height: 35px;
+            padding: 0px 20px;
+            padding-left: 25px;
+            border-radius: 15px;
+            margin: 30px;
+            color: #ffffff;
+            margin-bottom: -26px;
+            margin-left: 28px;
+        }
+        
+        /*---------------------------------------------------------------------*/
+        .card-img {
+            width: 100%;
+            border-radius: calc(1.25rem - 1px);
+        }
+        
+        .main-background {
+            background-color: #FA6900!important;
+        }
+        
+        /*FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-
+        FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-
+        FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-
+        FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-
+        FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-FUNDO-*/
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            background-color: #160e31;
+        }
+        
+        /*CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-
+        CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-
+        CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-
+        CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-
+        CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-CABEÇALHO-
+        */
+        
+        @media (max-width: 768px)
+        .lw-header {
+            padding: 5px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+        }
+        
+        .lw-header.lw-header {
+            background-image: linear-gradient(to bottom, #240945, #240945)!important;
+        }
+        
+        .lw-header .menu li a {
+            line-height: 40px;
+            display: block;
+            padding: 0px 15px;
+            color: #dfdfdf;
+            text-decoration: none;
+        }
+        
+        .menu-container {
+            display: flex;
+            align-items: center !important;
+            justify-content: space-between !important;
+            padding: 20px 5px 20px 5px;
+        }
+        
+        .lw-header ul, .lw-header li {
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            color: #ffffff;
+            font-weight: 900;
+            border-radius: 10px;
+        }
+        
+        a {
+            color: #2f8ecc;
+            text-decoration: none;
+            background-color: transparent;
+            border-radius: 10px;
+            -webkit-text-decoration-skip: objects;
+        }
+        
+        .menu-active.menu-active {
+            background-color: #ff9700;
+            color: #202020;
+        }
+        
+        </style>
+</html>
